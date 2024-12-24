@@ -1,0 +1,121 @@
+:root {
+    --nav-bg: #3B487B;
+    --main-color: #262A30;
+    --second-color: #363739;
+    --paragragh-color: #929498;
+
+}
+.bg-sec{
+    background-color: var(--second-color);
+    color: aliceblue;
+    font-size: 8px;
+}
+body {
+    background-color: var(--main-color);
+    font-family: "Comfortaa", sans-serif;
+    /* font-weight: 400; */
+    /* font-size: 18px; */
+}
+/* .navbar{
+transform: translateY(-50%);} */
+.nav-bg {
+    background-color: var(--nav-bg);
+}
+.card-header .btn:hover{
+    background-color: var(--nav-bg);
+}
+h1,h3,p {
+    color: var(--paragragh-color);
+}
+.parg-size{
+    font-size: 10px;
+    /* padding-left: 0; */
+}
+.bg-main{
+    background-color: var(--main-color);
+}
+.nav-item a {
+    font-weight: 100;
+    color: aliceblue;
+    font-size: 10px;
+}
+
+.navbar a:hover {
+    color: rgba(0, 128, 255, 0.909);
+}
+
+.navbar-nav .nav-link.active {
+    --bs-navbar-active-color: rgba(0, 128, 255, 0.909);
+}
+
+.nav-link:focus {
+    --bs-nav-link-hover-color: rgba(0, 128, 255, 0.909);
+}
+.home{
+    background-image: url(../image/wraper.png);
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+}
+.card-text {
+    font-weight: 100;
+    font-size: 12px;
+
+}
+
+.card{
+    filter: grayscale(60%);
+    overflow: hidden;
+    transition: all 450ms ease-in-out;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    filter: grayscale(0);
+}
+
+
+/***** Loader *****/
+.loading {
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background-color: #272b30e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .loader {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #fff;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    position: relative;
+ }
+ .loader::after {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-left: 4px solid #ff3d00;
+    border-bottom: 4px solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+ }
+ @keyframes rotation {
+    0% {
+       transform: rotate(0deg);
+    }
+    100% {
+       transform: rotate(360deg);
+    }
+ }
+ /***** End Loader *****/
