@@ -34,6 +34,13 @@ h1,h3,p {
 .bg-main{
     background-color: var(--main-color);
 }
+
+.hight{
+    background-image: url(../image/wraper.png);
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+}
 .nav-item a {
     font-weight: 100;
     color: aliceblue;
